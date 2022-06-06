@@ -1,0 +1,22 @@
+[ 파일 업로드 ]
+
+- cos.jar 파일: 파일 업로드랑 관련된 클래스 모여있는 파일
+(http://www.servlets.com/cos/)
+
+- 클래스
+- MultipartReqeust: 사용자 요청 폼에서 파일 업로드를 한 경우
+- FileRenamePolicy: 중복된 파일 이름이 있을 경우 어떻게 저장할 건지
+(ex) a.txt, a1.txt, a2.txt ...)
+
+- 사용자 요청 폼에서 파일 업로드할 경우
+<input type="file" enctype="multipart/form-data">
+
+- application/x-www-form-urlencoded: 기본값
+....?name=value&.......
+영문자가 아닌 것들은 %으로 변경되서 인코딩
+이진 파일 (이미지, 동영상 ...)을 인코딩하기에는 적합하지 않음
+
+- multipart/form-data
+파일 이름 (a.jpg) (인코딩) + 파일 내용물 (이진 파일) (인코딩 X)
+
+- text/plain: 디버깅용 

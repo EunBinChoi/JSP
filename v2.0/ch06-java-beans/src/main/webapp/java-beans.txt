@@ -1,0 +1,21 @@
+[ 자바 빈즈 (java beans) ]
+: beans (sw 덩어리) => class 구현 (DB 데이터 가져올 때)
+: 자바 빈즈를 통해서 객체를 만들 때는 빈 생성자 호출 (***) (자동 생성되는 빈 생성자 호출)
+
+EX) EMP table
+EMPNO, ENAME, JOB, DEPTNO...열을 필드로 가지고 있는 클래스 구현
+
+
+[ jsp action tag + java beans ]
+- 빈 생성 <jsp:useBean id=".." class="..."/>
+	- id: 빈 이름
+	- class: 사용할 자바 클래스 이름
+	
+- 빈 수정 <jsp:setProperty name=".." property=".." value="..."/> == setXXX
+	- name: 빈 생성시 주었던 id
+	- property: 속성 이름
+	- value: 변경할 값
+
+- 빈 반환 <jsp:getProperty name=".." property=".."/> == getXXX
+	- name: 빈 생성시 주었던 id
+	- property: 속성 이름

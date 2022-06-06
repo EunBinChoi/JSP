@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--  JSP 액션 태그
+		: 어떤 동작 일어나는 시점에 페이지 간의 이동하기 위한 태그
+		
+		ex) include, forward ...
+		
+		- include action tag
+			: 다른 페이지를 현재 페이지 포함
+			: 처리 결과 포함 (**)
+			: JSP 스크립트 부분은 값으로 대체해서 가지고 옴
+	 -->
+	<h1>Include Action Tag</h1>
+	<form method="get" action="08_includeActionTag1.jsp">
+	이름 : <input type="text" name="name"><br/>
+	담당자 이메일: <input type="email" name="adminEmail"><br/>
+	<input type="submit" value="sent">
+	</form>
+</body>
+</html>

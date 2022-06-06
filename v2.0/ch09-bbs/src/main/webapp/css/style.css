@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+BODY {
+	FONT-SIZE: 9pt; 
+	COLOR: black; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+	
+}
+TD {
+	FONT-SIZE: 9pt; 
+	COLOR: black; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+}
+SELECT {
+	FONT-SIZE: 9pt; 
+	COLOR: black; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+}
+DIV {
+	FONT-SIZE: 9pt; 
+	COLOR: black; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+	TEXT-ALIGN: center;
+}
+FORM {
+	FONT-SIZE: 9pt; 
+	COLOR: black; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+}
+TEXTAREA {
+	BORDER-RIGHT: 1px solid #999999; 
+	BORDER-TOP: 1px solid #999999; 
+	FONT-SIZE: 9pt; 
+	BORDER-LEFT: 1px solid #999999 ; 
+	COLOR: BLACK; 
+	BORDER-BOTTOM: 1px solid #999999; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+	BACKGROUND-COLOR: white
+}
+INPUT {
+	BORDER-RIGHT: 1px solid #999999; 
+	BORDER-TOP: 1px solid #999999; 
+	FONT-SIZE: 9pt; 
+	BORDER-LEFT: 1px solid #999999; 
+	COLOR: BLACK; 
+	BORDER-BOTTOM: 1px solid #999999; 
+	FONT-FAMILY: 'Source Sans Pro', sans-serif;
+	HEIGHT: 19px; 
+	BACKGROUND-COLOR: white
+}
+
+TABLE {
+	BORDER-COLLAPSE: collapse;
+	MARGIN: auto;
+}
+
+TR, TD {
+	PADDING: 10px;
+}
+
+A {
+	COLOR: BLACK; 
+	TEXT-DECORATION: none;
+	
+}
+
+
+

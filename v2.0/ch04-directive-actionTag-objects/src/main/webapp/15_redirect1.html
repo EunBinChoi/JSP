@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Redirect Example</h1>
+	<form method="post" action="16_redirect1.jsp">
+	아이디: <input name="id"><br/>
+	패스워드: <input type="password" name="pwd"><br/>
+	<input type="submit" value="Submit">
+	</form>
+	
+	<!-- 
+		15 == request1 ==> 16 == request2 ==> 17
+		
+		15 == request1 ==> 16
+		15 == request2 ==> 17
+		
+		15: 고객 
+		16, 17: 상담원
+		
+		1) 15번 고객이 16번 상담원한테 전화를 건다. (+ request1)
+		2) 16번 상담원이 해당 내용에 지식이 없어서 17번 상담원의 전화번호를 알려준다.
+		3) 15번 고객이 17번 상담원한테 전화를 걸어서 상담을 받는다. (+ request2)
+		
+		response url: localhost:8000/ch04/17_redirect1-1.jsp 
+	-->
+	
+</body>
+</html>

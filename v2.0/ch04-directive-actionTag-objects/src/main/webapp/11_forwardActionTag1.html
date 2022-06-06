@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Forward Tag Example</h1>
+	<form method="post" action="12_forwardActionTag1.jsp">
+	아이디: <input name="id"><br/>
+	패스워드: <input type="password" name="pwd"><br/>
+	<input type="submit" value="Submit">
+	</form>
+	
+	<!-- 
+		 11 === (request (id, pwd)) ===> 
+	     12 === (request (id, pwd), + param (str12)) ===> 
+	     13 === (request (id, pwd), + param (str12)) ===> 14
+	     
+	     11: 고객
+	     12, 13, 14: 상담원
+	     
+	     1) 11번 고객이 12번 상담원에게 전화를 건다.
+	     2) 12번 상담원이 해당 내용에 대해 지식이 없어서 13번 상담원한테 물어본다. (+ 11번 고객의 요청사항)
+	     3) 13번도 몰라서 14번한테 물어본다. (+ 11번 고객의 요청사항)
+	     
+		response url: localhost:8000/ch04/12_forwardActionTag1.jsp
+	-->
+</body>
+</html>

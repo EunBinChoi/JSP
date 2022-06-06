@@ -1,0 +1,17 @@
+[ 비동기 통신 (ajax) + 이벤트 생길 수 있는 문제점 ]
+
+ex) google 검색 엔진
+input tag => onkeypressdown => xhr 객체 생성 => 데이터 받아옴
+key 입력: 입력한 키워드와 관련된 데이터를 DB를 받아옴
+
+Q1. 순서가 바뀌면 생기는 문제점 ? 문제 생김 (데이터 변경)
+input tag  => xhr 객체 생성  => 데이터 받아옴 => onkeypressdown
+
+============================================================
+
+05_eventListener.jsp
+xhr 객체 생성 => 데이터 받아옴 (json, xml) => onclick (button)
+button 클릭: 받아온 데이터를 출력하기 위함
+
+Q1. 순서가 바뀌면 생기는 문제점 ? 문제 없음 (데이터 변경 X, 딜레이)
+onclick (button) =>  xhr 객체 생성 => 데이터 받아옴 (json, xml) 

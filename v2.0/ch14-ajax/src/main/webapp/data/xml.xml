@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE people>
+<people>
+	<!-- 1. name 태그, age 태그 -->
+	<person>
+		<name>park</name>
+		<age>20</age>
+	</person>
+	<person>
+		<name>lee</name>
+		<age>50</age>
+	</person>
+	
+	
+	<!-- 2. name 속성, age 속성 -->
+	<person name="david" age="22"/>
+	<person name="lisa" age="8"/>
+</people>

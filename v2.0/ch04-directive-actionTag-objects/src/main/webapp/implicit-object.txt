@@ -1,0 +1,21 @@
+[ .jsp 내장 객체 ]
+
+- 프로그래밍 단순화시키기 위해 별다른 선언없이 내장된 객체
+- jsp 컨테이너 (catalina) 제공 
+- request, response, out ....
+
+- 1) request: 사용자 요청에 대한 정보 처리하기 위한 객체
+- 2) response: 서버의 응답에 대한 정보 처리하기 위한 객체
+	- ex) cookie (사용자단 저장 정보) vs session (서버단 저장 정보)
+	- response.addCookie(): 서버 응답할 때 사용자에 등록할 쿠키 지정
+	- request.getCookie(): 사용자단에 이미 저장된 쿠키를 get
+	- ex) 아이디랑 비밀번호 자동 완성: cookie
+- 3) out: 브라우저에 출력 객체 (out.println())
+- 4) exception: 예외 처리 객체 (isErrorPage="true"인 페이지 생성 객체)
+- 5) application: 서블릿/앱에 대한 정보 가지고 있는 객체
+- 6) session: 세션 정보 저장하는 객체
+- 7) page: 해당 페이지에 대한 정보 저장하는 객체 (this 키워드 이용)
+
+==================================================================
+Q1. page, application (project), session, request (작은 scope -> 큰 scope)
+=>  page < request < session < application
