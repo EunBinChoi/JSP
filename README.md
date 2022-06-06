@@ -1,1 +1,1 @@
-# JSP Lecutre Note
+# JSP Lecture Note
